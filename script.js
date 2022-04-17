@@ -1,14 +1,3 @@
-class Slider {
-    constructor(width, height) {
-        this.width = width;
-        this.height = height;
-    }
- 
-    showSliderWidth() {
-        console.log(this.width);
-    }
+function multiply(a, b) {
+    return a * b;
 }
- 
-const slider = new Slider('500px', '150px');
- 
-slider.showSliderWidth();
