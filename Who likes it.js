@@ -12,7 +12,7 @@
 // ["Max", "John", "Mark"]           -->  "Max, John and Mark like this"
 // ["Alex", "Jacob", "Mark", "Max"]  -->  "Alex, Jacob and 2 others like this"
 
-const arr = ["Alex", "Jacob", "Mark", "Max"];
+const arr = ["Alex", "Jacob", "Mark", "Max", "Mark"];
 
 function likes(names) {
     if (names.length == 0) {
@@ -24,7 +24,7 @@ function likes(names) {
     } else if (names.length == 3) {
         return `${names[0]}, ${names[1]} and ${names[2]} like this`;
     } else {
-        return `${names[0]}, ${names[1]} and 2 others like this`;
+        return `${names[0]}, ${names[1]} and ${names.length - 2} others like this`;
     }
 }
 
