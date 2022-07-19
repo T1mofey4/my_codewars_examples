@@ -10,8 +10,8 @@
 // "Success"  =>  ")())())"
 // "(( @"     =>  "))((" 
 
+let word = 'CALL';
 
-let word = '(( @'
 
 function duplicateEncode(word) {
     let newWord = word.toLowerCase().split('')
@@ -39,5 +39,18 @@ function duplicateEncode(word) {
 console.log(duplicateEncode(word))
 
 
+// second way
+
+// function duplicateEncode(word) {
+//     let newWord = word.toLowerCase(); res = '';
+//     for (let i = 0; i < newWord.length; i++) {
+//         if(newWord.lastIndexOf(newWord[i]) == newWord.indexOf(newWord[i])) {
+//             res += '('
+//         } else {
+//             res += ')'
+//         }
+//     }
+//     return res
+// }
 
 
