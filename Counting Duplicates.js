@@ -49,3 +49,5 @@ function duplicateCount(string) {
 }
 
 console.log(counting(str))
+
+
